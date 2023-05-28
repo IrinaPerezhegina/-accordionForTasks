@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/-accordionForTasks/static/css/main.4c349bc1.css",
+    "main.js": "/-accordionForTasks/static/js/main.8a7a7581.js",
+    "static/media/icon.svg": "/-accordionForTasks/static/media/icon.19f3a06380414270f7c30dfe4debdb3a.svg",
+    "index.html": "/-accordionForTasks/index.html",
+    "static/media/logo.svg": "/-accordionForTasks/static/media/logo.f2bb4bf1da874055a746fdedc402822b.svg",
+    "main.4c349bc1.css.map": "/-accordionForTasks/static/css/main.4c349bc1.css.map",
+    "main.8a7a7581.js.map": "/-accordionForTasks/static/js/main.8a7a7581.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c349bc1.css",
+    "static/js/main.8a7a7581.js"
+  ]
+}
