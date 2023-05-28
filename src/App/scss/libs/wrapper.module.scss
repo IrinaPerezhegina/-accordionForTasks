@@ -1,0 +1,12 @@
+@import "./normalize.scss";
+@import "./variable.scss";
+
+.wrapper {
+	position: relative;
+	font-family: $main-font;
+	max-width: 1920px;
+	min-width: 320px;
+	max-height:1285px;
+	
+
+}

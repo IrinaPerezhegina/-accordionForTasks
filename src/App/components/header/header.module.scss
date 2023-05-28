@@ -1,0 +1,333 @@
+@import "../../scss/libs/normalize.scss";
+@import "../../scss/libs/variable.scss";
+
+.headerWrapper{
+    position: relative;
+    max-width: 1540px;
+    margin-left: 103px;
+	height: 80px;
+    justify-items: center;
+    align-items:center;
+    border-bottom: 1px solid #E1E1E1;
+    @media (max-width: $xxl1320) {
+        padding: 0;
+        margin-left: 10px;
+        border-bottom: 1px solid #E1E1E1;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    @media (max-width: $xl1140) {
+        padding: 0;
+        margin-left: 10px;
+        border-bottom: 1px solid #E1E1E1;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    @media (max-width:$lg960) {
+        margin-left: 1px;
+        border-bottom: 1px solid #E1E1E1;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    @media (max-width:$md720) {
+        margin-left: 1px;
+        border-bottom: 1px solid #E1E1E1;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    @media (max-width:$sm540) {
+        margin-left: 5px;
+        border-bottom: 1px solid #E1E1E1;
+        min-width: 100%;
+        max-width: 100%;
+    
+    }
+}
+    
+.header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    @media (max-width: $xxl1320) {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: $xl1140) {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width:$lg960) {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    @media (max-width:$md720) {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    @media (max-width:$sm540) {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+    
+    }
+    &Logo{
+        display: flex;
+        gap: 8px;
+    
+        @media (max-width: $xxl1320) {
+            gap: 10px;
+            padding: 0px;
+            >a>img{
+                width: 60px;
+                height: 60px;
+          }
+        }
+        @media (max-width: $xl1140) {
+            gap: 6px;
+            padding: 0px;
+            >a>img{
+                width: 50px;
+                height: 50px;
+          }
+        }
+        @media (max-width:$lg960) {
+            gap: 6px;
+            padding: 0px;
+            >a>img{
+                width: 38px;
+                height: 38px;
+          }
+        }
+        @media (max-width:$md720) {
+            gap: 6px;
+            padding: 0px;
+            >a>img{
+                width: 36px;
+                height: 36px;
+          }
+        }
+        @media (max-width:$sm540) {
+            gap: 5px;
+            padding: 0px;
+            >a>img{
+                width: 40px;
+                height: 40px;
+          }
+        
+        }
+       
+        &Text{
+            margin-top: 7px;
+            span{
+                line-height: 28.8px;
+                letter-spacing: .5%;
+                display: block;
+                font-size: 24px;
+                font-family:$main-color;
+                font-weight: $weight-700;
+              
+                @media (max-width: $xxl1320) {
+                    font-size:27px;
+                    line-height: 48.8px;
+                }
+                @media (max-width: $xl1140) {
+                    font-size:25px;
+                    line-height: 28.8px;
+                }
+                @media (max-width:$lg960) {
+                    font-size:22px;
+                    line-height: 28.8px;
+                }
+                @media (max-width:$md720) {
+                    font-size:16px;
+                    line-height: 28.8px;
+                }
+                @media (max-width:$sm540) {
+                    font-size:12px;
+                    line-height: 28.8px;
+                
+                }
+            }
+           
+        }
+    }
+    &User{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:32px;
+        padding-top: 5px;
+        padding-right: 68px;
+        @media (max-width: $xxl1320) {
+            gap:35px;
+            padding-top: 5px;
+            padding-right: 60px;
+        }
+        @media (max-width: $xl1140) {
+            gap:35px;
+            padding-top: 5px;
+            padding-right: 40px;
+        }
+        @media (max-width:$lg960) {
+            padding-left: 10px;
+            gap:15px;
+            padding-top: 5px;
+            padding-right: 20px;
+        }
+        @media (max-width:$md720) {
+            padding-left: 10px;
+            gap:10px;
+            padding-top: 5px;
+            padding-right: 15px;
+        }
+        @media (max-width:$sm540) {
+            padding-left: 10px;
+            gap:10px;
+            padding-top: 5px;
+            padding-right: 4px;
+        
+        }
+        &Icon{
+            cursor: pointer;
+            >img{
+                @media (max-width: $xxl1320) {
+                    width: 35px;
+                    height: 35px;
+                }
+                @media (max-width: $xl1140) {
+                    width: 30px;
+                    height: 30px;
+                }
+                @media (max-width:$lg960) {
+                    width: 25px;
+                    height: 25px;
+                }
+                @media (max-width:$md720) {
+                    width: 20px;
+                    height: 20px;
+                }
+                @media (max-width:$sm540) {
+                    width: 15px;
+                    height: 15px;
+                
+                }
+            }
+        }
+        &Avatar>img{
+                
+            @media (max-width: $xxl1320) {
+                width: 65px;
+                height: 65px;
+            }
+            @media (max-width: $xl1140) {
+                width: 50px;
+                height: 50px;
+            }
+            @media (max-width:$lg960) {
+                width: 40px;
+                height: 40px;
+            }
+            @media (max-width:$md720) {
+                width: 35px;
+                height: 35px;
+            }
+            @media (max-width:$sm540) {
+               width: 30px;
+               height: 30px;
+            
+            }
+        }
+        &Info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            @media (max-width: $xxl1320) {
+                gap: 16px;
+            }
+            @media (max-width: $xl1140) {
+                gap: 30px;
+            }
+            @media (max-width:$lg960) {
+                gap: 25px;
+            }
+            @media (max-width:$md720) {
+                gap: 20px;
+            }
+            @media (max-width:$sm540) {
+                gap: 10px;
+            
+            }
+        }
+        &Text{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            @media (max-width: $xxl1320) {
+                gap:4px;
+            }
+            @media (max-width: $xl1140) {
+                gap:4px;
+            }
+            @media (max-width:$lg960) {
+                gap:5px;
+            }
+            @media (max-width:$md720) {
+                gap:2px;
+            }
+            @media (max-width:$sm540) {
+                gap: 0px;
+            }
+            >span:nth-child(1){
+                font-size: 16px;
+                line-height: 19.2px;
+                @media (max-width: $xxl1320) {
+                    font-size:16px;
+                    white-space: nowrap;
+                }
+                @media (max-width: $xl1140) {
+                    font-size:16px;
+                    white-space: nowrap;
+                }
+                @media (max-width:$lg960) {
+                    font-size:16px;
+                    white-space: nowrap;
+                }
+                @media (max-width:$md720) {
+                    font-size:14px;
+                    white-space: nowrap;
+                }
+                @media (max-width:$sm540) {
+                    font-size:10px;
+                    white-space: nowrap;
+                }
+            }
+            >span:nth-child(2){
+                color: #9A9AB0;
+                font-size: 12px;
+                line-height:14.4px;
+                font-weight: $weight-400;
+                @media (max-width: $xxl1320) {
+                    font-size: 12px;
+                }
+                @media (max-width: $xl1140) {
+                    font-size: 12px;
+                }
+                @media (max-width:$lg960) {
+                    font-size: 11px;
+                }
+                @media (max-width:$md720) {
+                    font-size: 10px;
+                }
+                @media (max-width:$sm540) {
+                    font-size: 9px;
+                }
+            }
+         
+        }
+    }
+}

@@ -1,0 +1,734 @@
+@import "../../scss/libs/normalize.scss";
+@import "../../scss/libs/variable.scss";
+
+.mainWrapper{
+    width: 1920px;
+	height: 1285px;
+    display: grid;
+    padding-left: 103px;
+    padding-right:277px ;
+    grid-template-columns: 113px 1737px;
+    @media (max-width: $xxl1320) {
+        min-width: 100%;
+        max-width: 100%;
+        padding-left:90px;
+        grid-template-columns: 113px auto;
+    }
+    @media (max-width: $xl1140) {
+        min-width: 100%;
+        max-width: 100%;
+        padding-left:25px;
+        grid-template-columns: 103px 1207px;
+    }
+    @media (max-width:$lg960) {
+        min-width: 100%;
+        max-width: 100%;
+        padding-left:20px;
+        grid-template-columns: 85px auto;
+    }
+    @media (max-width:$md720) {
+        min-width: 100%;
+        max-width: 100%;
+        padding-left:15px;
+        grid-template-columns: 60px auto;
+    }
+    @media (max-width:$sm540) {
+        min-width: 100%;
+        max-width: 100%;
+        padding-left:5px;
+        grid-template-columns: 36px auto;
+    
+    }
+}
+
+
+.main{
+    &ContentLeft{
+        max-width: 80px;
+        height: 100%;
+        border-right: 1px solid #E1E1E1;
+        padding-top: 3.4rem;
+        padding-left: .8rem;
+        display:flex;
+        flex-direction: column;
+        align-self: start;
+        grid-column-start: 1;
+        border-right: 1px solid #E1E1E1;
+        @media (max-width: $xxl1320) {
+            height: 100%;
+            padding-top: 1.4rem;
+            padding-left: 1.3rem;
+        }
+        @media (max-width: $xl1140) {
+            height: 100%;
+            padding-top: 1.4rem;
+            padding-left: 1.5rem;
+        }
+        @media (max-width:$lg960) {
+            height: 100%;
+            padding-top: 1rem;
+            padding-left: .05rem;
+
+        }
+        @media (max-width:$md720) {
+            height: 100%;
+            padding-top: .9rem;
+            padding-left: .05rem;
+            max-width: 60px;
+        }
+        @media (max-width:$sm540) {
+            height: 100%;
+            padding-top: .4rem;
+            padding-left: .01rem;
+            max-width: 30px;
+        }
+    
+        >img{
+                width: 56px;
+                height: 52px;
+                @media (max-width: $xxl1320) {
+                    width: 46px;
+                    height: 42px;
+                }
+                @media (max-width: $xl1140) {
+                    width: 46px;
+                    height: 42px;
+                }
+                @media (max-width:$lg960) {
+                    width: 36px;
+                    height: 32px;
+                }
+                @media (max-width:$md720) {
+                    width: 26px;
+                    height:22px;
+                }
+                @media (max-width:$sm540) {
+                    width: 19px;
+                    height:18px;
+                }
+            
+        }
+      
+     
+    }
+    &ContentRight{
+        width: 1394px;
+        padding-top: 2.7rem;
+        display:flex;
+        flex-direction: column;
+        align-self:flex-start;
+        text-align:start;
+        grid-column-start: 2;
+        @media (max-width: $xxl1320) {
+            max-width:790px;
+        }
+        @media (max-width: $xl1140) {
+            max-width: 780px;
+        }
+        @media (max-width:$lg960) {
+            max-width: 710px;
+        }
+        @media (max-width:$md720) {
+            max-width: 645px;
+        }
+        @media (max-width:$sm540) {
+            max-width: 280px;
+        
+        }
+        h1{
+            margin-left: 57px;
+            word-spacing: 0.005em;
+            font-size: 24px;
+            font-weight: $weight-700;
+            line-height:  120%;
+            @media (max-width: $xxl1320) {
+                font-size: 22px;
+            }
+            @media (max-width: $xl1140) {
+                font-size: 20px;
+            }
+            @media (max-width:$lg960) {
+                font-size: 18px;
+            }
+            @media (max-width:$md720) {
+                font-size: 16px;
+            }
+            @media (max-width:$sm540) {
+                font-size: 14px;
+            }
+        }
+        
+        
+       
+    }
+}
+
+
+
+.table{
+    padding-top: 25px;
+
+    &Title{
+        align-items: center;
+        justify-content: center;
+        background-color: #F7F7FC;
+        display: grid;
+        grid-template-columns: 99px 75px 77px 171px 113px 123px 134px  101px 121px 82px 82px 105px 105px;
+        grid-template-rows: 66px;
+        @media (max-width:2000px) {
+            grid-template-columns: 89px 65px 67px 161px 103px 113px 124px  91px 111px 72px 72px 95px 95px;
+            grid-template-rows: 56px;
+            justify-content: left;
+
+        }
+        @media (max-width: $xxl1320) {
+            grid-template-columns: 59px 45px 47px 90px 73px 50px 72px  81px 50px 52px 52px 55px 55px;
+            grid-template-rows: 56px;
+            justify-content: left;
+        }
+        @media (max-width: $xl1140) {
+            grid-template-columns: 59px 35px 37px 90px 73px 73px 80px  61px 61px 42px 42px 55px 55px;
+            grid-template-rows:70px;
+            justify-content: left;
+        }
+        @media (max-width:$lg960) {
+            grid-template-columns: 59px 35px 37px 70px 63px 73px 62px  61px 51px 42px 42px 55px 55px;
+            grid-template-rows: 70px;
+            justify-content: left;
+        }
+        @media (max-width:$md720) {
+            grid-template-columns: 39px 25px 27px 80px 63px 63px 62px  51px 61px 32px 32px 50px 50px;
+            grid-template-rows: 70px;
+            justify-content: left;
+        }
+        @media (max-width:$sm540) {
+            grid-template-columns: 10px 30px 30px 20px 35px 23px 23px 21px 21px 22px 12px 15px 15px;
+            grid-template-rows:53px;
+            justify-content: left;
+        }
+        >div{
+            font-size: 14px;
+            line-height: 120%;
+            font-weight: $weight-700;
+            text-align:center;
+            @media (max-width: $xxl1320) {
+                font-size: 13px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+            @media (max-width: $xl1140) {
+                font-size: 12px;
+                word-wrap: wrap;
+                word-wrap: break-word;
+            }
+            @media (max-width:$lg960) {
+                font-size: 11px;
+                word-wrap: break-word;
+            }
+            @media (max-width:$md720) {
+                font-size: 10px;
+                word-wrap: break-word;
+            }
+            @media (max-width:$sm540) {
+                font-size: 6px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+              
+            }
+        }
+    }
+    &СompletedTasks{
+        display: grid;
+        background-color: #E1E1FB;
+        align-items: center;
+        justify-content: start;
+        grid-template-columns: 248px auto;
+        grid-template-rows: 42px;
+        >div>button{
+          text-align: start;
+            width: 237px;
+            position: relative;
+            height:  100%;
+            grid-column-start:1;
+            cursor: pointer;
+            background-color: #E1E1FB;
+            border: none;
+            font-size: 14px;
+            letter-spacing: -.2px;
+            font-weight: $weight-700;
+            @media (max-width:$md720) {
+                width:170px;
+                font-size: 12px;
+            }
+            @media (max-width:$sm540) {
+                width:150px;
+                font-size: 10px;
+            }
+            &::before{
+                content: "";  
+                position: absolute;
+                background-image: url("../../assets/main/completedTask.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                top:35%;
+                right: 0%;
+                width: 9px;
+                height:5px;
+                @media (max-width:$lg960) {
+                    right: 30%;
+                    width: 5px;
+                    height:15px;
+                }
+                
+                @media (max-width:$sm540) {
+                    right: 20%;
+                    width: 6px;
+                    height:15px;
+                  
+                }
+            }
+        }
+        
+    }
+    &TasksForToday{
+        display: grid;
+        background-color: #E1E1FB;
+        align-items: center;
+        justify-content: start;
+        grid-template-columns: 248px auto;
+        grid-template-rows: 51px;
+        >div>button{
+            text-align: start;
+            width: 237px;
+            position: relative;
+            height:  100%;
+            grid-column-start:1;
+            cursor: pointer;
+            background-color: #E1E1FB;
+            border: none;
+            font-size: 14px;
+            letter-spacing: -.2px;
+            font-weight: $weight-700;
+            @media (max-width:$md720) {
+                width:170px;
+                font-size: 12px;
+            }
+            @media (max-width:$sm540) {
+                width:150px;
+                font-size: 10px;
+            }
+            &::before{
+                content: "";  
+                position: absolute;
+                background-image: url("../../assets/main/TasksForToday.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                top:35%;
+                right: 0%;
+                width: 9px;
+                height:20px;
+                @media (max-width:$lg960) {
+                    right: 30%;
+                    width: 5px;
+                    height:15px;
+                }
+                
+                @media (max-width:$sm540) {
+                    right: 20%;
+                    width: 6px;
+                    height:15px;
+                  
+                }
+            }
+        }
+        
+    }
+    &UpcomingTasks{
+        display: grid;
+        background-color: #E1E1FB;
+        align-items: center;
+        justify-content: start;
+        grid-template-columns: 248px auto;
+        grid-template-rows: 42px;
+        >div>button{
+          text-align: start;
+            width: 237px;
+            position: relative;
+            height:  100%;
+            grid-column-start:1;
+            cursor: pointer;
+            background-color: #E1E1FB;
+            border: none;
+            font-size: 14px;
+            letter-spacing: -.2px;
+            font-weight: $weight-700;
+            @media (max-width:$md720) {
+                width:170px;
+                font-size: 12px;
+            }
+            @media (max-width:$sm540) {
+                width:150px;
+                font-size: 10px;
+            }
+            &::before{
+                content: "";  
+                position: absolute;
+                background-image: url("../../assets/main/completedTask.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                top:35%;
+                right: 0%;
+                width: 9px;
+                height:5px;
+                @media (max-width:$lg960) {
+                    right: 30%;
+                    width: 5px;
+                    height:15px;
+                }
+                
+                @media (max-width:$sm540) {
+                    right: 20%;
+                    width: 6px;
+                    height:15px;
+                  
+                }
+            }
+        }
+        
+    }
+    &Task{
+        align-items: center;
+        justify-content: center;
+        background-color: #F7F7FC;
+        display: grid;
+        grid-template-columns: 99px 75px 77px 171px 113px 123px 134px  101px 121px 82px 82px 105px 105px;
+        grid-template-rows: 66px;
+        @media (max-width:2000px) {
+            grid-template-columns: 89px 65px 67px 161px 103px 113px 124px  91px 111px 72px 72px 95px 95px;
+            grid-template-rows: 56px;
+            justify-content: left;
+
+        }
+        @media (max-width: $xxl1320) {
+            grid-template-columns: 59px 45px 47px 90px 73px 50px 72px  81px 50px 52px 52px 55px 55px;
+            grid-template-rows: 56px;
+            justify-content: left;
+        }
+        @media (max-width: $xl1140) {
+            grid-template-columns: 59px 35px 37px 90px 73px 73px 80px  61px 61px 42px 42px 55px 55px;
+            grid-template-rows:70px;
+            justify-content: left;
+        }
+        @media (max-width:$lg960) {
+            grid-template-columns: 59px 35px 37px 70px 63px 73px 62px  61px 51px 42px 42px 55px 55px;
+            grid-template-rows: 70px;
+            justify-content: left;
+        }
+        @media (max-width:$md720) {
+            grid-template-columns: 39px 25px 27px 80px 63px 63px 62px  51px 61px 32px 32px 50px 50px;
+            grid-template-rows: 70px;
+            justify-content: left;
+        }
+        @media (max-width:$sm540) {
+            grid-template-columns: 10px 30px 30px 20px 35px 23px 23px 21px 21px 22px 12px 15px 15px;
+            grid-template-rows:53px;
+            justify-content: left;
+        }
+        &Done{
+            align-items: center;
+            justify-content: center;
+            background-color: #F7F7FC;
+            display: grid;
+            grid-template-columns: 99px 75px 77px 171px 113px 123px 134px  101px 121px 82px 82px 105px 105px;
+            grid-template-rows: 66px;
+            background-color:#71FACA;
+            @media (max-width:2000px) {
+                grid-template-columns: 89px 65px 67px 161px 103px 113px 124px  91px 111px 72px 72px 95px 95px;
+                grid-template-rows: 56px;
+                justify-content: left;
+    
+            }
+            @media (max-width: $xxl1320) {
+                grid-template-columns: 59px 45px 47px 90px 73px 50px 72px  81px 50px 52px 52px 55px 55px;
+                grid-template-rows: 56px;
+                justify-content: left;
+                word-wrap: break-word;
+            }
+            @media (max-width: $xl1140) {
+                grid-template-columns: 59px 35px 37px 90px 73px 73px 80px  61px 61px 42px 42px 55px 55px;
+                grid-template-rows:70px;
+                justify-content: left;
+                word-wrap: break-word;
+            }
+            @media (max-width:$lg960) {
+                grid-template-columns: 59px 35px 37px 70px 63px 73px 62px  61px 51px 42px 42px 55px 55px;
+                grid-template-rows: 70px;
+                justify-content: left;
+                word-wrap: break-word;
+            }
+            @media (max-width:$md720) {
+                grid-template-columns: 39px 25px 27px 80px 63px 63px 62px  51px 61px 32px 32px 50px 50px;
+                grid-template-rows: 70px;
+                justify-content: left;
+            }
+            @media (max-width:$sm540) {
+                grid-template-columns: 10px 30px 30px 20px 35px 23px 23px 21px 21px 22px 12px 15px 15px;
+                grid-template-rows:53px;
+                justify-content: left;
+            }
+            >div{
+                opacity: 80%;
+                letter-spacing: 0.008em;
+                font-size: 14px;
+                line-height: 120%;
+                font-weight: $weight-600;
+                text-align:center;
+                @media (max-width: $xxl1320) {
+                    font-size: 13px;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                }
+                @media (max-width: $xl1140) {
+                    font-size: 12px;
+                    word-wrap: break-word;
+                }
+                @media (max-width:$lg960) {
+                    font-size: 11px;
+                    word-wrap: break-word;
+                }
+                @media (max-width:$md720) {
+                    font-size: 10px;
+                    word-wrap: break-word;
+                }
+                @media (max-width:$sm540) {
+                    font-size:7px;
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                }
+                >select{
+                    font-size: 14px;
+                    line-height: 130%;
+                    width: 111px;
+                    height: 36px;
+                    letter-spacing: 0.008em;
+                    border-radius:8px;
+                    border: 0.5px solid #000000;
+                    @media (max-width: $xxl1320) {
+                        font-size: 13px;
+                        font-size: 11px;
+                        line-height: 110%;
+                        width: 75px;
+                        height: 36px;
+                        letter-spacing: 0.008em;
+                        border-radius:8px;
+                        border: 0.5px solid #000000;
+                    }
+                    @media (max-width: $xl1140) {
+                        font-size: 12px;
+                        font-size: 11px;
+                        line-height: 110%;
+                        width: 70px;
+                        height: 36px;
+                        letter-spacing: 0.008em;
+                        border-radius:8px;
+                        border: 0.5px solid #000000;
+                    }
+                    @media (max-width:$lg960) {
+                        font-size: 11px;
+                        line-height: 110%;
+                        width: 60px;
+                        height: 36px;
+                        letter-spacing: 0.008em;
+                        border-radius:8px;
+                        border: 0.5px solid #000000;
+                    }
+                    @media (max-width:$md720) {
+                        font-size: 10px;
+                        line-height: 110%;
+                        width: 60px;
+                        height: 36px;
+                        letter-spacing: 0.008em;
+                        border-radius:8px;
+                        border: 0.5px solid #000000;
+                    }
+                    @media (max-width:$sm540) {
+                        font-size: 9px;
+                        line-height: 110%;
+                        width: 20px;
+                        height: 36px;
+                        letter-spacing: 0.008em;
+                        border-radius:8px;
+                        border: 0.5px solid #000000;
+                    }
+                }
+            }
+        }
+        >div{
+            opacity: 80%;
+            letter-spacing: 0.008em;
+            font-size: 14px;
+            line-height: 120%;
+            font-weight: $weight-600;
+            text-align:center;
+            @media (max-width: $xxl1320) {
+                font-size: 13px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+            @media (max-width: $xl1140) {
+                font-size: 12px;
+                word-wrap: break-word;
+            }
+            @media (max-width:$lg960) {
+                font-size: 11px;
+                word-wrap: break-word;
+            }
+            @media (max-width:$md720) {
+                font-size: 10px;
+                word-wrap: break-word;
+            }
+            @media (max-width:$sm540) {
+                font-size:7px;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+            >select{
+                font-size: 14px;
+                line-height: 130%;
+                width: 111px;
+                height: 36px;
+                letter-spacing: 0.008em;
+                border-radius:8px;
+                border: 0.5px solid #000000;
+                @media (max-width: $xxl1320) {
+                    font-size: 13px;
+                    font-size: 11px;
+                    line-height: 110%;
+                    width: 75px;
+                    height: 36px;
+                    letter-spacing: 0.008em;
+                    border-radius:8px;
+                    border: 0.5px solid #000000;
+                }
+                @media (max-width: $xl1140) {
+                    font-size: 12px;
+                    font-size: 11px;
+                    line-height: 110%;
+                    width: 70px;
+                    height: 36px;
+                    letter-spacing: 0.008em;
+                    border-radius:8px;
+                    border: 0.5px solid #000000;
+                }
+                @media (max-width:$lg960) {
+                    font-size: 11px;
+                    line-height: 110%;
+                    width: 60px;
+                    height: 36px;
+                    letter-spacing: 0.008em;
+                    border-radius:8px;
+                    border: 0.5px solid #000000;
+                }
+                @media (max-width:$md720) {
+                    font-size: 10px;
+                    line-height: 110%;
+                    width: 60px;
+                    height: 36px;
+                    letter-spacing: 0.008em;
+                    border-radius:8px;
+                    border: 0.5px solid #000000;
+                }
+                @media (max-width:$sm540) {
+                    font-size: 9px;
+                    line-height: 110%;
+                    width: 20px;
+                    height: 36px;
+                    letter-spacing: 0.008em;
+                    border-radius:8px;
+                    border: 0.5px solid #000000;
+                }
+            }
+        }
+    }
+}
+
+.selected{
+    background: #FFCCDD;
+}
+
+.option{
+    background-color:#FFFFFF;;
+}
+.open{
+    width: 100%;
+    height:56px;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-name: square2;
+}
+@keyframes square2 {
+    from {
+        width: 100%;
+        height:0px;
+        visibility: hidden;
+    }
+  
+    to {
+        width: 100%;
+        height: 56px;
+       
+    }
+}
+ 
+
+.hidden {
+    animation: fade 2s ease forwards;
+  width: 100%;
+  height: 50px;
+
+    
+
+  
+}
+@keyframes fade {
+    from {
+        width:100%;
+        height: 66px;
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+          
+        width:100%;
+      height: 0px;
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+
+
+
+
+@keyframes square3 {
+    from {
+      width:100%;
+      height: 66px;
+      
+    }
+    to{
+       
+        width:100%;
+      height: 0px;
+     overflow: hidden;
+    }
+  }
+
+  
+  .none{
+    display: block;
+  }
